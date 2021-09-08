@@ -116,6 +116,15 @@ module.exports = configure(function (ctx) {
     // https://v2.quasar.dev/options/animations
     animations: [],
 
+    module: {
+      rules: [
+        {
+         test: /\.svg$/,
+         loader: 'vue-svg-loader', // `vue-svg` for webpack 1.x
+        },
+      ],
+    },
+
     // https://v2.quasar.dev/quasar-cli/developing-ssr/configuring-ssr
     ssr: {
       pwa: false,
