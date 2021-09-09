@@ -1,6 +1,6 @@
 <template >
-  <div  id="home" style="position: relative;width: 1920px;height: 5573px;">
- <header class="header">
+  <q-layout   id="home" style="position: relative;width: 1920px;height: 5573px; background-color:#F3F3F9;">
+ <q-header class="header">
    <img src="../assets/Logo.svg" class="imagencabecera">
 
    <div id="right-side" style="position: absolute;width: 80px;height: 26px;left: 1229px;top: 48px;">
@@ -12,28 +12,27 @@
    <img src="../assets/mdi_menu.png" class="menucabecera">  
   </div>
 
- </header>
+ </q-header>
 
- <nav>
-<ul style="list-style:none">
-
-    <li  class="navcabecera" ><a class="subnavcabecera"  href="/es/">HOME</a></li>
-
-
-  </ul>
-   </nav>
-
-
-   <section>
+ <q-tabs >
+    <ul style="list-style:none">
+        <li  class="navcabecera" ><a class="subnavcabecera"  href="/">HOME</a></li>
+    </ul>
+   </q-tabs>
 
 
 
 
-   </section>
+  <q-page-container>
+    <router-view/>
+    </q-page-container>
+
+
+     
 
 
 
-   <footer class="footer">
+   <q-footer class="footer">
        <img src="../assets/WVGLogo.svg" class="logofooter">  
           <div style="position: absolute;width: 220px;height: 60px;left: 0px;top: 87px;">
             <p class="texto1footer">
@@ -46,8 +45,8 @@
             </div>
             
               <div>
-             <p class="informacioncontactofooter"  style="position: absolute;width: 220px;height: 36px;left: 0px;top: 171px;"> 
-             Telefon: 05361 189 8888 <br> <a  style="text-decoration: none;" href="info@wvg.de">info@wvg.de </a>
+             <p class="informacioncontactofooter"  style="position: absolute;width: 220px;height: 36px;left: 0px;top: 171px;color: #282828;"> 
+             Telefon: 05361 189 8888 <br> <a  style="text-decoration: none; color: #282828;" href="info@wvg.de">info@wvg.de </a>
             </p>
 
             </div>
@@ -71,10 +70,10 @@
 
             </div>
 
-  </footer>
+  </q-footer>
 
  
- </div>
+ </q-layout>
 </template>
 
 <script>

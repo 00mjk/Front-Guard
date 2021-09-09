@@ -59,16 +59,19 @@ transform: rotate(90deg);
 
 .navcabecera{
 
-    position: absolute;
+ position: absolute;
 width: 1425px;
 height: 15px;
 left: 256px;
 top: 136px;
 
+padding:0;
+	margin:0;
+
 }
 
 .subnavcabecera{
-    font-family: Source Sans Pro;
+ font-family: Source Sans Pro;
 font-style: normal;
 font-weight: normal;
 font-size: 12px;
@@ -82,6 +85,8 @@ font-style: normal;
 font-weight: normal;
 
 color: #282828;
+
+
 }
 
 
@@ -159,7 +164,7 @@ width: 220px;
 height: 36px;
 left: 0px;
 top: 171px;
-text-decoration: none;
+
 }
 
 .divsocialfooter{
