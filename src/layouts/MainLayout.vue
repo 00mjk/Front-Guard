@@ -23,6 +23,56 @@
   </ul>
    </nav>
 
+
+   <section>
+
+
+
+
+   </section>
+
+
+
+   <footer class="footer">
+       <img src="../assets/WVGLogo.svg" class="logofooter">  
+          <div style="position: absolute;width: 220px;height: 60px;left: 0px;top: 87px;">
+            <p class="texto1footer">
+            Wolfsburger Verkehrs-GmbH
+           </p>
+           <p class="texto2footer"> 
+             Borsigstraße 28 <br> 
+              38446 Wolfsburg
+            </p>
+            </div>
+            
+              <div>
+             <p class="informacioncontactofooter"  style="position: absolute;width: 220px;height: 36px;left: 0px;top: 171px;"> 
+             Telefon: 05361 189 8888 <br> <a  style="text-decoration: none;" href="info@wvg.de">info@wvg.de </a>
+            </p>
+
+            </div>
+
+            <div class="divsocialfooter" >
+
+              <a target="_blank"  href="https://www.facebook.com/wvg.wolfsburg/"> <img  src="../assets/mdi_facebook.svg"  style="position: absolute;width: 24px;height: 24px;left: 0px;" class="logofooter">  </a>
+              <a target="_blank" href="https://www.youtube.com/channel/UCHiMdeVeUprCOvN7nE_mnFQ" ><img src="../assets/mdi_youtube.svg" style="position: relative;width: 24px;height: 24px;left: 48px;" class="logofooter"> </a>
+              <a target="_blank" href="https://www.instagram.com/stadtwerkewolfsburg/?hl=de" > <img src="../assets/mdi_instagram.svg" style="position: absolute;width: 24px;height: 24px;left: 96px;" class="logofooter"> </a>
+             </div>
+
+             <div class="divhotline">
+                <p class="textohotline" > Service Hotline </p>
+                <p class="numerohotline"> 05361 189 8888 </p>
+
+            </div>
+
+            <div class="divcredits">
+                  <hr>
+                  <p class="copycredits"> © 2021 Wolfsburger Verkehrs-GmbH </p>
+
+            </div>
+
+  </footer>
+
  
  </div>
 </template>

@@ -53,8 +53,7 @@ transform: rotate(90deg);
     bottom: 33.33%;
     
     /* Neutral (Dark)/80 */
-    
-    
+  
     transform: rotate(90deg);
 }
 
@@ -78,6 +77,181 @@ line-height: 15px;
 text-decoration: none;
 
 /* Neutral (Dark)/80 */
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
 
 color: #282828;
+}
+
+
+
+.footer{
+    position: absolute;
+    width: 1440px;
+    height: 500px;
+    left: 240px;
+    top: 2965px;
+}
+
+.logofooter{
+    position: absolute;
+left: 0%;
+right: 84.63%;
+top: 0%;
+bottom: 87.4%;
+
+}
+
+
+
+.texto1footer{
+    position: absolute;
+width: 220px;
+height: 16px;
+left: 0px;
+
+
+/* Common/Label */
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+
+/* Neutral (Dark)/80 */
+
+color: #282828;
+}
+
+
+.texto2footer{
+
+    position: absolute;
+width: 220px;
+height: 36px;
+left: 0px;
+top: 25px;
+
+/* Common/Body1 */
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+
+
+/* Neutral (Dark)/80 */
+
+color: #282828;
+
+
+
+}
+
+.informacioncontactofooter{
+
+position: absolute;
+width: 220px;
+height: 36px;
+left: 0px;
+top: 171px;
+text-decoration: none;
+}
+
+.divsocialfooter{
+
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 0px;
+    top: 231px;
+}
+
+.divhotline{
+
+position: absolute;
+width: 220px;
+height: 50px;
+left: 0px;
+top: 327px;
+}
+
+.textohotline{
+position: absolute;
+width: 220px;
+height: 16px;
+left: 0px;
+
+
+/* Common/Label */
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+
+/* Neutral (Dark)/80 */
+
+color: #282828;
+}
+
+
+.numerohotline{
+    position: absolute;
+width: 220px;
+height: 26px;
+left: 0px;
+top: 22px;
+
+/* Desktop/Heading4 */
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 120%;
+/* or 34px */
+
+
+/* Primary/Primary 600 */
+
+color: #EB2E2D;
+
+}
+
+.divcredits{
+      position: absolute;
+width: 1440px;
+height: 51px;
+left: 0px;
+top: 449px;
+}
+
+.copycredits{
+    position: absolute;
+    width: 542px;
+    height: 26px;
+    left: 0px;
+    top: 38px;
+    
+    /* Common/Body1 */
+    
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+    
+    
+    /* Neutral (Dark)/80 */
+    
+    color: #282828;
+    
+
 }
