@@ -1,262 +1,191 @@
 // app global css in SCSS form
-
-
-.header{
-position: absolute;
-width: 1441px;
-height: 120px;
-left: 240px;
-top: 0px;
-
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: Source Sans Pro, sans-serif;
+  margin: 0;
+}
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100%;
+  padding: 8px 0;
 }
 
-.imagencabecera{
-position: absolute;
-width: 35.09px;
-height: 50px;
-left: 676px;
-top: 35px
+h4 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 8px 0;
 }
 
-.lenguajecabecera{
-    position: absolute;
-width: 24px;
-height: 24px;
-right: 188px;
-top: calc(50% - 24px/2 + 2px);
-
+.header-icons {
+  position: absolute;
+  right: 0;
+  display: flex;
+  margin-right: 16px;
 }
 
-.checkboxcabecera{   
-position: absolute;
-width: 24px;
-height: 24px;
-right: 132px;
-top: calc(50% - 24px/2)
+.menucabecera {
+  left: 45%;
+  right: -20%;
+  top: 20.83%;
+  bottom: 33.33%;
+  width: 100%;
+
+  /* Neutral (Dark)/80 */
+
+  transform: rotate(90deg);
 }
 
-.divcabecera{
-    
-position: absolute;
-width: 40px;
-height: 24px;
-right: -24px;
-top: calc(50% - 24px/2 - 8px);
-
-transform: rotate(90deg);
-}
-.menucabecera{
-    position: absolute;
-    left: 45%;
-    right: -20%;
-    top: 20.83%;
-    bottom: 33.33%;
-    
-    /* Neutral (Dark)/80 */
-  
-    transform: rotate(90deg);
+.footer {
+  position: absolute;
+  width: 1440px;
+  height: 500px;
+  left: 240px;
+  top: 2965px;
 }
 
-.navcabecera{
-
- position: absolute;
-width: 1425px;
-height: 15px;
-left: 256px;
-top: 136px;
-
-padding:0;
-	margin:0;
-
+.logofooter {
+  position: absolute;
+  left: 0%;
+  right: 84.63%;
+  top: 0%;
+  bottom: 87.4%;
 }
 
-.subnavcabecera{
- font-family: Source Sans Pro;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-text-decoration: none;
+.texto1footer {
+  position: absolute;
+  width: 220px;
+  height: 16px;
+  left: 0px;
 
-/* Neutral (Dark)/80 */
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: normal;
+  /* Common/Label */
 
-color: #282828;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
 
+  /* Neutral (Dark)/80 */
 
+  color: #282828;
 }
 
+.texto2footer {
+  position: absolute;
+  width: 220px;
+  height: 36px;
+  left: 0px;
+  top: 25px;
 
+  /* Common/Body1 */
 
-.footer{
-    position: absolute;
-    width: 1440px;
-    height: 500px;
-    left: 240px;
-    top: 2965px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+
+  /* Neutral (Dark)/80 */
+
+  color: #282828;
 }
 
-.logofooter{
-    position: absolute;
-left: 0%;
-right: 84.63%;
-top: 0%;
-bottom: 87.4%;
-
+.informacioncontactofooter {
+  position: absolute;
+  width: 220px;
+  height: 36px;
+  left: 0px;
+  top: 171px;
 }
 
-
-
-.texto1footer{
-    position: absolute;
-width: 220px;
-height: 16px;
-left: 0px;
-
-
-/* Common/Label */
-
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
-
-/* Neutral (Dark)/80 */
-
-color: #282828;
+.divsocialfooter {
+  position: absolute;
+  width: 120px;
+  height: 24px;
+  left: 0px;
+  top: 231px;
 }
 
-
-.texto2footer{
-
-    position: absolute;
-width: 220px;
-height: 36px;
-left: 0px;
-top: 25px;
-
-/* Common/Body1 */
-
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 140%;
-/* or 20px */
-
-
-/* Neutral (Dark)/80 */
-
-color: #282828;
-
-
-
+.divhotline {
+  position: absolute;
+  width: 220px;
+  height: 50px;
+  left: 0px;
+  top: 327px;
 }
 
-.informacioncontactofooter{
+.textohotline {
+  position: absolute;
+  width: 220px;
+  height: 16px;
+  left: 0px;
 
-position: absolute;
-width: 220px;
-height: 36px;
-left: 0px;
-top: 171px;
+  /* Common/Label */
 
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Neutral (Dark)/80 */
+
+  color: #282828;
 }
 
-.divsocialfooter{
+.numerohotline {
+  position: absolute;
+  width: 220px;
+  height: 26px;
+  left: 0px;
+  top: 22px;
 
-    position: absolute;
-    width: 120px;
-    height: 24px;
-    left: 0px;
-    top: 231px;
+  /* Desktop/Heading4 */
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 120%;
+  /* or 34px */
+
+  /* Primary/Primary 600 */
+
+  color: #eb2e2d;
 }
 
-.divhotline{
-
-position: absolute;
-width: 220px;
-height: 50px;
-left: 0px;
-top: 327px;
+.divcredits {
+  position: absolute;
+  width: 1440px;
+  height: 51px;
+  left: 0px;
+  top: 449px;
 }
 
-.textohotline{
-position: absolute;
-width: 220px;
-height: 16px;
-left: 0px;
+.copycredits {
+  position: absolute;
+  width: 542px;
+  height: 26px;
+  left: 0px;
+  top: 38px;
 
+  /* Common/Body1 */
 
-/* Common/Label */
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
 
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
+  /* Neutral (Dark)/80 */
 
-/* Neutral (Dark)/80 */
-
-color: #282828;
-}
-
-
-.numerohotline{
-    position: absolute;
-width: 220px;
-height: 26px;
-left: 0px;
-top: 22px;
-
-/* Desktop/Heading4 */
-
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: bold;
-font-size: 28px;
-line-height: 120%;
-/* or 34px */
-
-
-/* Primary/Primary 600 */
-
-color: #EB2E2D;
-
-}
-
-.divcredits{
-      position: absolute;
-width: 1440px;
-height: 51px;
-left: 0px;
-top: 449px;
-}
-
-.copycredits{
-    position: absolute;
-    width: 542px;
-    height: 26px;
-    left: 0px;
-    top: 38px;
-    
-    /* Common/Body1 */
-    
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 140%;
-    /* or 20px */
-    
-    
-    /* Neutral (Dark)/80 */
-    
-    color: #282828;
-    
-
+  color: #282828;
 }

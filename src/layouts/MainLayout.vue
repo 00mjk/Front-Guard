@@ -1,48 +1,17 @@
 <template>
-
-  <q-layout
-    id="home"
-    style="
-      position: relative;
-      width: 1920px;
-      height: 5573px;
-      background-color: #f3f3f9;
-    "
-  >
-    <q-header class="header">
-      <div class="row">
-      <img src="../assets/Logo.svg" class="imagencabecera" />
-
-      <div
-        id="right-side"
-        style="
-          position: absolute;
-          width: 80px;
-          height: 26px;
-          left: 1229px;
-          top: 48px;
-        "
-      >
-        <img src="../assets/cil_language.svg" class="lenguajecabecera" />
-        <img
-          src="../assets/mdi_checkbox-blank-badge-outline.svg"
-          class="checkboxcabecera"
-        />
-      </div>
-
-      <div id="div-cabecera" class="divcabecera">
-        <img src="../assets/mdi_menu.png" class="menucabecera" />
-      </div>
-
-      </div>
-      
+  <q-layout id="home">
+    <q-header class="bg-primary text-white">
+      <q-toolbar style="height: 120px; border: 1px solid black">
+        <q-toolbar-title class="text-center" style="border: 1px solid black">
+          <img src="../assets/Logo.svg" style="width: 35.09px; height: 50px" />
+        </q-toolbar-title>
+        <div class="header-icons">
+          <img src="../assets/cil_language.svg" />
+          <img src="../assets/mdi_checkbox-blank-badge-outline.svg" />
+          <img src="../assets/mdi_menu.png" class="menucabecera" />
+        </div>
+      </q-toolbar>
     </q-header>
-
-    <q-tabs>
-      <ul style="list-style: none">
-        <li class="navcabecera"><a class="subnavcabecera" href="/">HOME</a></li>
-      </ul>
-    </q-tabs>
 
     <q-page-container>
       <router-view />
