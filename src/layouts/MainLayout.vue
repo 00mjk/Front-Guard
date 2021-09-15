@@ -1,14 +1,14 @@
 <template>
   <q-layout id="home">
     <q-header class="bg-primary text-white">
-      <q-toolbar style="height: 120px; border: 1px solid black">
-        <q-toolbar-title class="text-center" style="border: 1px solid black">
-          <img src="../assets/Logo.svg" style="width: 35.09px; height: 50px" />
+      <q-toolbar style="height: 120px;">
+        <q-toolbar-title class="text-center" >
+         <a href="./"> <img  id="transicion1" class="transicion1" src="../assets/Logo.svg" style="width: 35.09px; height: 50px" /></a>
         </q-toolbar-title>
         <div class="header-icons">
-          <img src="../assets/cil_language.svg" />
-          <img src="../assets/mdi_checkbox-blank-badge-outline.svg" />
-          <img src="../assets/mdi_menu.png" class="menucabecera" />
+         <a> <img src="../assets/cil_language.svg" /></a>
+         <a> <img src="../assets/mdi_checkbox-blank-badge-outline.svg" /> </a>
+         <a> <img src="../assets/mdi_menu.png" class="menucabecera" /> </a>
         </div>
       </q-toolbar>
     </q-header>
@@ -89,7 +89,7 @@
       </div>
 
       <div class="divcredits">
-        <hr />
+        <hr class="hrstyle" />
         <p class="copycredits">© 2021 Wolfsburger Verkehrs-GmbH</p>
       </div>
     </q-footer>
@@ -98,6 +98,7 @@
 
 <script>
 import { ref } from "vue";
+
 
 export default {
   setup() {
