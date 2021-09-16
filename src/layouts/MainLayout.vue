@@ -98,7 +98,7 @@
 
 <script>
 import { ref } from "vue";
-
+import inputfromto from 'src/components/InputGenericoHome.vue'
 
 export default {
   setup() {
