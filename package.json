@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "description": "A Quasar Framework app",
-  "author": "jocarrd <miguel@jig.es>",
+  "author": "jocarrd <jcarrera@jig.es>",
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
