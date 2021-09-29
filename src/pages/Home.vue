@@ -78,14 +78,14 @@
     </div>
 
     <form>
-      <div class="row q-col-gutter-md">
-        <div class="col-md-2 col-sm-6">
+      <div class="row q-col-gutter-md" style="margin-top: 61px;">
+        <div class="col-md-2 col-sm-6 q-mb-lg" >
           <h4>Trip planner<span style="color: #d92127">.</span></h4>
           <p style="font-size: 14px">Routes from Monday to Saturday</p>
         </div>
       </div>
 
-      <div class="row q-col-gutter-md">
+      <div class="row q-col-gutter-md q-mb-xl">
         <div class="col-md-6 col-sm-12 col-xs-12">
           <q-card class="my-card">
             <input-generico-home
@@ -112,7 +112,7 @@
         </div>
       </div>
 
-      <div class="row q-col-gutter-md">
+      <div class="row q-col-gutter-md q-mb-xl">
         <div class="col-md-6 col-sm-12 col-xs-12">
           <div class="radio-toolbar">
             <input
@@ -120,7 +120,9 @@
               id="radioApple"
               name="radioFruit"
               value="DEPART"
-              checked
+              checked 
+
+              
             />
             <label for="radioApple">DEPART</label>
 
@@ -142,7 +144,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-sm-6 col-xs-12 q-pl-md">
+        <div class="col-md-3 col-sm-6 col-xs-12 q-pl-md ">
           <time-input Header="To"> </time-input>
         </div>
 
@@ -158,11 +160,11 @@
       </div>
     </form>
 
-    <hr class="hrstyle" />
+    <hr class="hrstyle" style="margin-top: 184px;" />
 
     <form>
-      <div class="row q-col-gutter-md">
-        <div class="col-md-2 col-sm-6">
+      <div class="row q-col-gutter-md" style="margin-top: 132px;">
+        <div class="col-md-2 col-sm-6 q-mb-lg">
           <h4>Bus lines info<span style="color: #d92127">.</span></h4>
           <p style="font-size: 14px">Routes from Monday to Saturday</p>
         </div>
@@ -170,82 +172,81 @@
 
       <div class="row q-col-gutter-md">
         <div class="col-md-8 col-sm-12">
-          <div class="q-pa-md">
+          
             <search-input Header="Label" />
-          </div>
+          
           <div class="busCards">
-          <bus-card
-            Color="blue"
-            Numero="201"
-            Label1="Velstove"
-            Label2="Mörser Winkel"
-          />
-          <bus-card
-            Color="pink"
-            Numero="201"
-            Label1="Velstove"
-            Label2="Mörser Winkel"
-          />
-          <bus-card
-            Color="pink"
-            Numero="201"
-            Label1="Velstove"
-            Label2="Mörser Winkel"
-          />
-          <bus-card
-            Color="pink"
-            Numero="201"
-            Label1="Velstove"
-            Label2="Mörser Winkel"
-          />
-          <bus-card
-            Color="pink"
-            Numero="201"
-            Label1="Velstove"
-            Label2="Mörser Winkel"
-          />
-          <bus-card
-            Color="pink"
-            Numero="201"
-            Label1="Velstove"
-            Label2="Mörser Winkel"
-          />
-          <bus-card
-            Color="pink"
-            Numero="201"
-            Label1="Velstove"
-            Label2="Mörser Winkel"
-          />
-          <bus-card
-            Color="pink"
-            Numero="201"
-            Label1="Velstove"
-            Label2="Mörser Winkel"
-          />
-          <bus-card
-            Color="pink"
-            Numero="201"
-            Label1="Velstove"
-            Label2="Mörser Winkel"
-          />
-          <bus-card
-            Color="pink"
-            Numero="201"
-            Label1="Velstove"
-            Label2="Mörser Winkel"
-          />
+            <bus-card
+              Color="#D41217"
+              Numero="201"
+              Label1="Velstove"
+              Label2="Mörser Winkel"
+            />
+            <bus-card
+              Color="#31B5A4"
+              Numero="201"
+              Label1="Velstove"
+              Label2="Mörser Winkel"
+            />
+            <bus-card
+              Color="#6A509D"
+              Numero="201"
+              Label1="Velstove"
+              Label2="Mörser Winkel"
+            />
+            <bus-card
+              Color="#EBB500"
+              Numero="201"
+              Label1="Velstove"
+              Label2="Mörser Winkel"
+            />
+            <bus-card
+              Color="#21B9E6"
+              Numero="201"
+              Label1="Velstove"
+              Label2="Mörser Winkel"
+            />
+            <bus-card
+              Color="#F07E12"
+              Numero="201"
+              Label1="Velstove"
+              Label2="Mörser Winkel"
+            />
+            <bus-card
+              Color="#28969E"
+              Numero="201"
+              Label1="Velstove"
+              Label2="Mörser Winkel"
+            />
+            <bus-card
+              Color="#31A836"
+              Numero="201"
+              Label1="Velstove"
+              Label2="Mörser Winkel"
+            />
+            <bus-card
+              Color="#108841"
+              Numero="201"
+              Label1="Velstove"
+              Label2="Mörser Winkel"
+            />
+            <bus-card
+              Color="#FB379F"
+              Numero="201"
+              Label1="Velstove"
+              Label2="Mörser Winkel"
+            />
           </div>
         </div>
 
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-xs-12">
           <div class="q-card my-card">
-           
-              <google-maps />
-            
+            <google-maps />
           </div>
         </div>
       </div>
     </form>
+    
   </q-page>
 </template>
 

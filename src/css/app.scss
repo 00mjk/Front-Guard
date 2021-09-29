@@ -11,27 +11,7 @@
   --neutral00: rgba(255, 255, 255, 1)
   --neutral05: rgba(242, 242, 242, 1)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 }
-
-
-
 
 
 h1,
@@ -101,7 +81,15 @@ background: black;
 }
 
 
+.footer{
+  
 
+  max-width: 1440px;
+   margin: 0 auto;
+    min-height: 0px;
+     padding: 16px;
+  
+}
 
 
 .menucabecera {
@@ -116,27 +104,11 @@ background: black;
   transform: rotate(90deg);
 }
 
-.footer {
-  position: absolute;
-  width: 1440px;
-  height: 500px;
-  left: 240px;
-  top: 2965px;
-}
 
-.logofooter {
-  position: absolute;
-  left: 0%;
-  right: 84.63%;
-  top: 0%;
-  bottom: 87.4%;
-}
 
 .texto1footer {
-  position: absolute;
-  width: 220px;
-  height: 16px;
-  left: 0px;
+ 
+  
 
   /* Common/Label */
 
@@ -152,11 +124,9 @@ background: black;
 }
 
 .texto2footer {
-  position: absolute;
-  width: 220px;
-  height: 36px;
-  left: 0px;
-  top: 25px;
+  
+ 
+  
 
   /* Common/Body1 */
 
@@ -172,35 +142,15 @@ background: black;
   color: #282828;
 }
 
-.informacioncontactofooter {
-  position: absolute;
-  width: 220px;
-  height: 36px;
-  left: 0px;
-  top: 171px;
-}
 
-.divsocialfooter {
-  position: absolute;
-  width: 120px;
-  height: 24px;
-  left: 0px;
-  top: 231px;
-}
 
-.divhotline {
-  position: absolute;
-  width: 220px;
-  height: 50px;
-  left: 0px;
-  top: 327px;
-}
+
+
 
 .textohotline {
-  position: absolute;
-  width: 220px;
-  height: 16px;
-  left: 0px;
+ 
+  
+  
 
   /* Common/Label */
 
@@ -216,11 +166,8 @@ background: black;
 }
 
 .numerohotline {
-  position: absolute;
-  width: 220px;
-  height: 26px;
-  left: 0px;
-  top: 22px;
+  
+  
 
   /* Desktop/Heading4 */
 
@@ -236,20 +183,11 @@ background: black;
   color: #eb2e2d;
 }
 
-.divcredits {
-  position: absolute;
-  width: 1440px;
-  height: 51px;
-  left: 0px;
-  top: 449px;
-}
+
 
 .copycredits {
-  position: absolute;
-  width: 542px;
-  height: 26px;
-  left: 0px;
-  top: 38px;
+  
+
 
   /* Common/Body1 */
 

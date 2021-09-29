@@ -1,14 +1,20 @@
 <template>
   <q-layout id="home">
     <q-header class="bg-primary text-white">
-      <q-toolbar style="height: 120px;">
-        <q-toolbar-title class="text-center" >
-         <a href="./"> <img  id="transicion1" class="transicion1" src="../assets/Logo.svg" style="width: 35.09px; height: 50px" /></a>
+      <q-toolbar style="height: 120px">
+        <q-toolbar-title class="text-center">
+          <a href="./">
+            <img
+              id="transicion1"
+              class="transicion1"
+              src="../assets/Logo.svg"
+              style="width: 35.09px; height: 50px"
+          /></a>
         </q-toolbar-title>
         <div class="header-icons">
-         <a> <img src="../assets/cil_language.svg" /></a>
-         <a> <img src="../assets/mdi_checkbox-blank-badge-outline.svg" /> </a>
-         <a> <img src="../assets/mdi_menu.png" class="menucabecera" /> </a>
+          <a> <img src="../assets/cil_language.svg" /></a>
+          <a> <img src="../assets/mdi_checkbox-blank-badge-outline.svg" /> </a>
+          <a> <img src="../assets/mdi_menu.png" class="menucabecera" /> </a>
         </div>
       </q-toolbar>
     </q-header>
@@ -17,88 +23,66 @@
       <router-view />
     </q-page-container>
 
-    <q-footer class="footer">
-      <img src="../assets/WVGLogo.svg" class="logofooter" />
-      <div
-        style="
-          position: absolute;
-          width: 220px;
-          height: 60px;
-          left: 0px;
-          top: 87px;
-        "
-      >
-        <p class="texto1footer">Wolfsburger Verkehrs-GmbH</p>
-        <p class="texto2footer">
-          Borsigstraße 28 <br />
-          38446 Wolfsburg
-        </p>
-      </div>
+    <footer class="footer" style="margin-top: 315px">
+      <div class="row q-col-gutter-md" style="margin-bottom: 72px">
+        <div class="col-md-2 col-sm-6">
+          <img src="../assets/WVGLogo.svg" />
+          <div>
+            <div
+              class="direction"
+              style="margin-bottom: 24px; margin-top: 24px"
+            >
+              <p class="texto1footer">Wolfsburger Verkehrs-GmbH</p>
+              <p class="texto2footer">
+                Borsigstraße 28 <br />
+                38446 Wolfsburg
+              </p>
+            </div>
+          </div>
 
-      <div>
-        <p
-          class="informacioncontactofooter"
-          style="
-            position: absolute;
-            width: 220px;
-            height: 36px;
-            left: 0px;
-            top: 171px;
-            color: #282828;
-          "
-        >
-          Telefon: 05361 189 8888 <br />
-          <a style="text-decoration: none; color: #282828" href="info@wvg.de"
-            >info@wvg.de
-          </a>
-        </p>
-      </div>
+          <div class="contact" style="margin-bottom: 24px">
+            <p>
+              Telefon: 05361 189 8888 
+              <a style="text-decoration:none;color: #282828;" href="info@wvg.de">info@wvg.de </a>
+            </p>
+          </div>
 
-      <div class="divsocialfooter">
-        <a target="_blank" href="https://www.facebook.com/wvg.wolfsburg/">
-          <img
-            src="../assets/mdi_facebook.svg"
-            style="position: absolute; width: 24px; height: 24px; left: 0px"
-            class="logofooter"
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.youtube.com/channel/UCHiMdeVeUprCOvN7nE_mnFQ"
-          ><img
-            src="../assets/mdi_youtube.svg"
-            style="position: relative; width: 24px; height: 24px; left: 48px"
-            class="logofooter"
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.instagram.com/stadtwerkewolfsburg/?hl=de"
-        >
-          <img
-            src="../assets/mdi_instagram.svg"
-            style="position: absolute; width: 24px; height: 24px; left: 96px"
-            class="logofooter"
-          />
-        </a>
-      </div>
+          <div style="margin-bottom: 74px">
+            <a target="_blank" href="https://www.facebook.com/wvg.wolfsburg/">
+              <img
+                src="../assets/mdi_facebook.svg"
+                style="margin-right: 28px"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCHiMdeVeUprCOvN7nE_mnFQ"
+              ><img
+                src="../assets/mdi_youtube.svg"
+                style="margin-right: 28px"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/stadtwerkewolfsburg/?hl=de"
+            >
+              <img src="../assets/mdi_instagram.svg" />
+            </a>
+          </div>
 
-      <div class="divhotline">
-        <p class="textohotline">Service Hotline</p>
-        <p class="numerohotline">05361 189 8888</p>
+          <p class="textohotline">Service Hotline</p>
+          <p class="numerohotline">05361 189 8888</p>
+        </div>
       </div>
-
-      <div class="divcredits">
-        <hr class="hrstyle" />
-        <p class="copycredits">© 2021 Wolfsburger Verkehrs-GmbH</p>
-      </div>
-    </q-footer>
+      <hr class="hrstyle" />
+      <p class="copycredits">© 2021 Wolfsburger Verkehrs-GmbH</p>
+    </footer>
   </q-layout>
 </template>
 
 <script>
 import { ref } from "vue";
-import inputfromto from 'src/components/InputGenericoHome.vue'
+import inputfromto from "src/components/InputGenericoHome.vue";
 
 export default {
   setup() {

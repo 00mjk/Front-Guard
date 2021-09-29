@@ -104,10 +104,11 @@ export default defineComponent({
  width: calc(100%/5 - 19px);
 height: 192px;
 background: #ffffff;
-box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
-border-radius: 16px;
+box-shadow: 0px 15px 32px -16px rgba(17, 17, 17, 0.06);
+border-radius: 24px;
 display: inline-block;
 margin: 16px 16px 0 0;
+border: 1px white;
 }
 
 .cardbus .text {
