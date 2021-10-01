@@ -41,8 +41,9 @@
           Header="To"
           style="margin-top: 16px"
         />
+
         <p class="p-body2" style="color: #9a9a9a; margin-top: 16px">
-          MORE OPTIONS
+          MORE OPTIONS <img src="../assets/Pluscircle.svg"  />
         </p>
       </div>
 
@@ -61,11 +62,11 @@
 
         <div class="row">
           <div class="col-md-4 col-sm-12 col-xs-12 q-mb-lg q-ma-xl">
-              <card-map Header="Rathaus"/>
+            <card-map Header="Rathaus" />
           </div>
 
           <div class="col-md-4 col-sm-12 col-xs-12 q-mb-lg q-ma-xl">
-              <card-map/>
+            <card-map />
           </div>
         </div>
       </div>
