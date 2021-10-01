@@ -14,8 +14,8 @@
         filled
         clearable
         color="dark"
-       label="showLabel"
-        hint={{Hint}}
+       :label='Label'
+        :hint='Hint'
         :shadow-text="inputShadowText"
         @keydown="processInputFill"
         @focus="processInputFill"

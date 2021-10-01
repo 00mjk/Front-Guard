@@ -78,10 +78,10 @@
     </div>
 
     <form>
-      <div class="row q-col-gutter-md" style="margin-top: 61px;">
-        <div class="col-md-2 col-sm-6 q-mb-lg" >
+      <div class="row q-col-gutter-md" style="margin-top: 61px">
+        <div class="col-md-2 col-sm-6 q-mb-lg">
           <h4>Trip planner<span style="color: #d92127">.</span></h4>
-          <p style="font-size: 14px">Routes from Monday to Saturday</p>
+          <p class="p-body2">Routes from Monday to Saturday</p>
         </div>
       </div>
 
@@ -120,9 +120,7 @@
               id="radioApple"
               name="radioFruit"
               value="DEPART"
-              checked 
-
-              
+              checked
             />
             <label for="radioApple">DEPART</label>
 
@@ -144,7 +142,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-sm-6 col-xs-12 q-pl-md ">
+        <div class="col-md-3 col-sm-6 col-xs-12 q-pl-md">
           <time-input Header="To"> </time-input>
         </div>
 
@@ -155,26 +153,25 @@
 
       <div class="row items-end">
         <div class="col-md-2">
-          <input type="button" class="btnsubmit" value="Plan My trip" />
+          <input type="button" class="btnsubmit" onclick="location.href='../#/TripPlanner'" value="Plan My trip" />
         </div>
       </div>
     </form>
 
-    <hr class="hrstyle" style="margin-top: 184px;" />
+    <hr class="hrstyle" style="margin-top: 184px" />
 
     <form>
-      <div class="row q-col-gutter-md" style="margin-top: 132px;">
+      <div class="row q-col-gutter-md" style="margin-top: 132px">
         <div class="col-md-2 col-sm-6 q-mb-lg">
           <h4>Bus lines info<span style="color: #d92127">.</span></h4>
-          <p style="font-size: 14px">Routes from Monday to Saturday</p>
+          <p class="p-body2">Routes from Monday to Saturday</p>
         </div>
       </div>
 
       <div class="row q-col-gutter-md">
         <div class="col-md-8 col-sm-12">
-          
-            <search-input Header="Label" />
-          
+          <search-input Header="Label" />
+
           <div class="busCards">
             <bus-card
               Color="#D41217"
@@ -246,7 +243,6 @@
         </div>
       </div>
     </form>
-    
   </q-page>
 </template>
 

@@ -41,9 +41,13 @@
           </div>
 
           <div class="contact" style="margin-bottom: 24px">
-            <p>
-              Telefon: 05361 189 8888 
-              <a style="text-decoration:none;color: #282828;" href="info@wvg.de">info@wvg.de </a>
+            <p class="p-body2">
+              Telefon: 05361 189 8888 <br>
+              <a
+                style="text-decoration: none; color: #282828"
+                href="info@wvg.de"
+                >info@wvg.de
+              </a>
             </p>
           </div>
 
