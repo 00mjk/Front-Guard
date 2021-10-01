@@ -108,7 +108,7 @@ box-shadow: 0px 15px 32px -16px rgba(17, 17, 17, 0.06);
 border-radius: 24px;
 display: inline-block;
 margin: 16px 16px 0 0;
-border: 1px white;
+border: 1px solid white;
 }
 
 .cardbus .text {
