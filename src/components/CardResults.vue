@@ -20,8 +20,8 @@
         </q-item-section>
 
         <div class="row" style="width: 100%; margin-top: 20px">
-          <div class="col-md-4" style="width: 33%; ">
-            <legend >
+          <div class="col-md-4" style="width: 33%">
+            <legend>
               DEPART
               <span class="date">
                 12:20 <img src="../assets/Group55.svg" style="margin-left: 8px"
@@ -29,18 +29,18 @@
             </legend>
           </div>
 
-          <div class="col-md-4" style="width: 33%;" >
-            <legend >
+          <div class="col-md-4" style="width: 33%">
+            <legend>
               ARRIVE
               <span class="date"> 13:14 </span>
             </legend>
           </div>
 
-            <div class="col-md-4 ">
-            <legend >
-           
-              <span  style="display:flex;" class="date"> 2,90 € <img src="../assets/Info.svg" style="margin-left: 8px"
-              /> </span>
+          <div class="col-md-4" style="width: 33%">
+            <legend>
+              <span style="display: flex" class="date">
+                2,90 € <img src="../assets/Info.svg" style="margin-left: 8px" />
+              </span>
             </legend>
           </div>
         </div>
@@ -54,9 +54,7 @@
             <img src="../assets/Print.svg" />
           </div>
 
-            <legend style="margin-top: 5px;"> 12:20  </legend>
-           
-            
+          <legend style="margin-top: 5px">12:20</legend>
         </q-card-section>
       </q-card>
     </q-expansion-item>
@@ -73,13 +71,10 @@ export default defineComponent({
 </script>
 
 <style>
-
-
-.mxrig{
+.mxrig {
   width: 100%;
-  float:right;
+  float: right;
 }
-
 
 legend {
   font-family: Source Sans Pro;
