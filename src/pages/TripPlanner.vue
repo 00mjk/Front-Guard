@@ -29,7 +29,7 @@
     </div>
 
     <div class="row q-col-gutter-md" style="margin-top: 8px">
-      <div class="col-md-3 col-sm-6 col-xs-12 q-mb-lg">
+      <div class="col-md-3 col-sm-12 col-xs-12 q-mb-lg">
         <input-generico-home
           Header="From"
           Hint="Write the name of the street, bus stop or your location "
@@ -43,8 +43,10 @@
         />
 
         <p class="p-body2" style="color: #9a9a9a; margin-top: 16px">
-          MORE OPTIONS <img src="../assets/Pluscircle.svg"  />
+          MORE OPTIONS <img src="../assets/Pluscircle.svg" />
         </p>
+
+        <card-results />
       </div>
 
       <div class="col-md-9 col-sm-12 col-xs-12 q-mb-lg">
@@ -77,11 +79,12 @@
 <script>
 import { defineComponent } from "@vue/composition-api";
 import CardMap from "src/components/CardMap.vue";
+import CardResults from "src/components/CardResults.vue";
 import GoogleMaps from "src/components/GoogleMaps.vue";
 import InputGenericoHome from "src/components/InputGenericoHome.vue";
 
 export default defineComponent({
-  components: { InputGenericoHome, CardMap },
+  components: { InputGenericoHome, CardMap, CardResults },
   setup() {},
 });
 </script>
