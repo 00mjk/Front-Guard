@@ -37,9 +37,9 @@
           </div>
 
           <div class="col-md-4" style="width: 33%">
-            <legend>
+            <legend style="width: 100%; display: flex; justify-content: right;">
               <span style="display: flex" class="date">
-                2,90 € <img src="../assets/Info.svg" style="margin-left: 8px" />
+                2,90 € <img src="../assets/Info.svg" style="margin-left: 4px" />
               </span>
             </legend>
           </div>
@@ -53,8 +53,14 @@
             <img src="../assets/Link.svg" style="margin-right: 10px" />
             <img src="../assets/Print.svg" />
           </div>
+        </q-card-section>
+               <card-results-line Time="9" Distance="520" BusStop="Leonardo Hotel Wolfsburg City Center" Type="Walk" Color="Blue"/>
+               <card-results-line BusStop="Kuntsmuseum" BusStops="7" Time="7" />
+               <card-results-line />
+               <card-results-line />
 
-          <legend style="margin-top: 5px">12:20</legend>
+        <q-card-section> 
+        
         </q-card-section>
       </q-card>
     </q-expansion-item>
@@ -63,9 +69,10 @@
 
 <script>
 import { defineComponent } from "@vue/composition-api";
+import CardResultsLine from "./CardResultsLine.vue";
 
 export default defineComponent({
-  components: {},
+  components: {CardResultsLine},
   setup() {},
 });
 </script>
@@ -74,6 +81,12 @@ export default defineComponent({
 .mxrig {
   width: 100%;
   float: right;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 legend {
