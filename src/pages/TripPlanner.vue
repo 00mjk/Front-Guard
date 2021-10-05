@@ -46,11 +46,41 @@
           MORE OPTIONS <img src="../assets/Pluscircle.svg" />
         </p>
 
-        <card-results Min="27" Depart="11:47" Arrive="12:14"  Price="2,90"/>
-        <card-results  Min="28" Depart="12:16" Arrive="12:44"  Price="2,90"/>
-        <card-results  Min="24" Depart="12:20" Arrive="12:44"  Price="2,90"/>
-        <card-results  Min="28" Depart="12:46" Arrive="13:14"  Price="2,90"/>
-        <card-results  Min="24" Depart="12:50" Arrive="13:14"  Price="2,90"/>
+        <card-results
+          class="q-mt-md"
+          Min="27"
+          Depart="11:47"
+          Arrive="12:14"
+          Price="2,90"
+        />
+        <card-results
+          class="q-mt-md"
+          Min="28"
+          Depart="12:16"
+          Arrive="12:44"
+          Price="2,90"
+        />
+        <card-results
+          class="q-mt-md"
+          Min="24"
+          Depart="12:20"
+          Arrive="12:44"
+          Price="2,90"
+        />
+        <card-results
+          class="q-mt-md"
+          Min="28"
+          Depart="12:46"
+          Arrive="13:14"
+          Price="2,90"
+        />
+        <card-results
+          class="q-mt-md"
+          Min="24"
+          Depart="12:50"
+          Arrive="13:14"
+          Price="2,90"
+        />
       </div>
 
       <div class="col-md-9 col-sm-12 col-xs-12 q-mb-lg">
@@ -84,7 +114,6 @@
 import { defineComponent } from "@vue/composition-api";
 import CardMap from "src/components/CardMap.vue";
 import CardResults from "src/components/CardResults.vue";
-import GoogleMaps from "src/components/GoogleMaps.vue";
 import InputGenericoHome from "src/components/InputGenericoHome.vue";
 
 export default defineComponent({

@@ -13,18 +13,23 @@
         <q-item-section style="align-items: end">
           <div class="row items-center" style="margin-top: -6px">
             <div style="display: block">
-              <p class="headerNumber">{{Min}}</p>
+              <p class="headerNumber">{{ Min }}</p>
               <legend style="margin-top: -7px">MIN</legend>
             </div>
           </div>
         </q-item-section>
 
-        <div class="row" style="width: 100%; margin-top: 20px">
+        <div class="row" style="width: 100%">
+          <div style="width: 100%" class="col col-lineheader"></div>
+        </div>
+
+        <div class="row" style="width: 100%; margin-top: 10px">
           <div class="col-md-4" style="width: 33%">
             <legend>
               DEPART
               <span class="date">
-                {{Depart}} <img src="../assets/Group55.svg" style="margin-left: 8px"
+                {{ Depart }}
+                <img src="../assets/Group55.svg" style="margin-left: 8px"
               /></span>
             </legend>
           </div>
@@ -32,14 +37,15 @@
           <div class="col-md-4" style="width: 33%">
             <legend>
               ARRIVE
-              <span class="date"> {{Arrive}} </span>
+              <span class="date"> {{ Arrive }} </span>
             </legend>
           </div>
 
           <div class="col-md-4" style="width: 33%">
-            <legend style="width: 100%; display: flex; justify-content: right;">
+            <legend style="width: 100%; display: flex; justify-content: right">
               <span style="display: flex" class="date">
-                {{Price}} € <img src="../assets/Info.svg" style="margin-left: 4px" />
+                {{ Price }} €
+                <img src="../assets/Info.svg" style="margin-left: 4px" />
               </span>
             </legend>
           </div>
@@ -49,20 +55,56 @@
       <q-card>
         <q-card-section>
           <div class="logos">
+            <div class="row" style="width: 100%">
+              <div
+                style="width: 100%; margin-top: -16px"
+                class="col col-lineheader"
+              ></div>
+            </div>
             <img src="../assets/Download.svg" style="margin-right: 10px" />
             <img src="../assets/Link.svg" style="margin-right: 10px" />
             <img src="../assets/Print.svg" />
           </div>
         </q-card-section>
-               <card-results-line Hour="12:20" Time="9" Distance="520" BusStop="Leonardo Hotel Wolfsburg City Center" Walk="True" />
-               <card-results-line Hour="12:29" Line="201" Color="#D41217" Number="201"  BusStop="Kuntsmuseum" BusStops="7" Time="7" />
-               <card-results-line Hour="12:36"  Line="212"  BusStop="ZOB Bay 8" BusStops="1" Number="212" Time="2" />
-               <card-results-line Hour="12:38"  Walk="True"  BusStop="Feuerwehr" Distance="300" Time="6" />
-               <card-results-line Hour="12:38"  Final="True"  BusStop="Volkswagen AutoMuseum"  />
 
-        <q-card-section> 
-        
-        </q-card-section>
+        <card-results-line
+          Hour="12:20"
+          Time="9"
+          Distance="520"
+          BusStop="Leonardo Hotel Wolfsburg City Center"
+          Walk=true
+        />
+        <card-results-line
+          Hour="12:29"
+          Line=201
+          Color="#D41217"
+          Number="201"
+          BusStop="Kuntsmuseum"
+          BusStops="7"
+          Time="7"
+        />
+        <card-results-line
+          Hour="12:36"
+          Line=212
+          BusStop="ZOB Bay 8"
+          BusStops="1"
+          Number="212"
+          Time="2"
+        />
+        <card-results-line
+          Hour="12:38"
+          Walk=true
+          BusStop="Feuerwehr"
+          Distance="300"
+          Time="6"
+        />
+        <card-results-line
+          Hour="12:38"
+          Final=true
+          BusStop="Volkswagen AutoMuseum"
+        />
+
+        <q-card-section> </q-card-section>
       </q-card>
     </q-expansion-item>
   </q-list>
@@ -73,8 +115,8 @@ import { defineComponent } from "@vue/composition-api";
 import CardResultsLine from "./CardResultsLine.vue";
 
 export default defineComponent({
-  components: {CardResultsLine},
-   props: {
+  components: { CardResultsLine },
+  props: {
     Min: String,
     Depart: String,
     Arrive: String,
@@ -85,6 +127,15 @@ export default defineComponent({
 </script>
 
 <style>
+.col-lineheader::before {
+  content: "";
+  display: inline-block;
+
+  width: 100%;
+
+  border: 1px dashed #f2f2f2;
+}
+
 .mxrig {
   width: 100%;
   float: right;

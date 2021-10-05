@@ -53,11 +53,12 @@
         </div>
 
         <div class="row">
-          <div class="col-md-2 col-sm-2" ></div>
+          <div class="col-md-2 col-sm-2"></div>
 
-          <div class="col-md-2 col-sm-2 center q-mt-sm col-line" style="margin-top: -2px;">
-            
-          </div>
+          <div
+            class="col-md-2 col-sm-2 center q-mt-sm col-line"
+            style="margin-top: -2px"
+          ></div>
 
           <div class="col-md-8 col-sm-2">
             <legend>{{ BusStops }} bus stops</legend>
@@ -77,8 +78,12 @@
           </div>
         </div>
 
-        <div class="col-md-2 col-sm-2 center ">
-          <img src="../assets/Final.svg" class="moneco" />
+        <div class="col-md-2 col-sm-2 center">
+          <img
+            style="width: 50%"
+            src="../assets/end_journey.svg"
+            class="moneco"
+          />
         </div>
 
         <div class="col-md-8 col-sm-2">
@@ -89,7 +94,7 @@
       <div class="row">
         <div class="col-md-2 col-sm-2"></div>
 
-        <div class="col-md-2 col-sm-2 center "></div>
+        <div class="col-md-2 col-sm-2 center"></div>
 
         <div class="col-md-8 col-sm-2"></div>
       </div>
@@ -98,13 +103,12 @@
 </template>
 
 <style scoped>
-
 .col-line::before {
-content: "";
-display: inline-block;
-height: 55px;
+  content: "";
+  display: inline-block;
+  height: 55px;
 
-border: 2px solid #D41217;
+  border: 2px solid #d41217;
 }
 </style>
 
@@ -120,10 +124,10 @@ export default defineComponent({
     Color: String,
     BusStop: String,
     BusStops: String,
-    Walk: Boolean,
-    Number: Number,
+    Walk: String,
+    Number: String,
     Hour: String,
-    Final: Boolean,
+    Final: String,
   },
   computed: {
     style() {
