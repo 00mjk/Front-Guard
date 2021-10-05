@@ -13,7 +13,7 @@
         <q-item-section style="align-items: end">
           <div class="row items-center" style="margin-top: -6px">
             <div style="display: block">
-              <p class="headerNumber">27</p>
+              <p class="headerNumber">{{Min}}</p>
               <legend style="margin-top: -7px">MIN</legend>
             </div>
           </div>
@@ -24,7 +24,7 @@
             <legend>
               DEPART
               <span class="date">
-                12:20 <img src="../assets/Group55.svg" style="margin-left: 8px"
+                {{Depart}} <img src="../assets/Group55.svg" style="margin-left: 8px"
               /></span>
             </legend>
           </div>
@@ -32,14 +32,14 @@
           <div class="col-md-4" style="width: 33%">
             <legend>
               ARRIVE
-              <span class="date"> 13:14 </span>
+              <span class="date"> {{Arrive}} </span>
             </legend>
           </div>
 
           <div class="col-md-4" style="width: 33%">
             <legend style="width: 100%; display: flex; justify-content: right;">
               <span style="display: flex" class="date">
-                2,90 € <img src="../assets/Info.svg" style="margin-left: 4px" />
+                {{Price}} € <img src="../assets/Info.svg" style="margin-left: 4px" />
               </span>
             </legend>
           </div>
@@ -54,10 +54,11 @@
             <img src="../assets/Print.svg" />
           </div>
         </q-card-section>
-               <card-results-line Time="9" Distance="520" BusStop="Leonardo Hotel Wolfsburg City Center" Type="Walk" Color="Blue"/>
-               <card-results-line BusStop="Kuntsmuseum" BusStops="7" Time="7" />
-               <card-results-line />
-               <card-results-line />
+               <card-results-line Hour="12:20" Time="9" Distance="520" BusStop="Leonardo Hotel Wolfsburg City Center" Walk="True" />
+               <card-results-line Hour="12:29" Line="201" Color="#D41217" Number="201"  BusStop="Kuntsmuseum" BusStops="7" Time="7" />
+               <card-results-line Hour="12:36"  Line="212"  BusStop="ZOB Bay 8" BusStops="1" Number="212" Time="2" />
+               <card-results-line Hour="12:38"  Walk="True"  BusStop="Feuerwehr" Distance="300" Time="6" />
+               <card-results-line Hour="12:38"  Final="True"  BusStop="Volkswagen AutoMuseum"  />
 
         <q-card-section> 
         
@@ -73,6 +74,12 @@ import CardResultsLine from "./CardResultsLine.vue";
 
 export default defineComponent({
   components: {CardResultsLine},
+   props: {
+    Min: String,
+    Depart: String,
+    Arrive: String,
+    Price: String,
+  },
   setup() {},
 });
 </script>

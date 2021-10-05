@@ -11,7 +11,7 @@
             filled
             clearable
             color="dark"
-            label="showLabel"
+            label="Label2"
            
            
           >
@@ -20,16 +20,22 @@
 
 
          <q-card-section style="padding: 0 0 0 8px">
-         <q-toggle
+         <q-toggle class="p-body2 q-mr-xl"
         v-model="value"
         color="red"
         label="DayTime bus lines"
         left-label size="xs"
       />
-      <q-toggle
+      <q-toggle class="p-body2 q-mr-xl"
         v-model="value1"
         color="red"
         label="Evening bus lines"
+        left-label size="xs"
+      />
+      <q-toggle class="p-body2 q-mr-xl"
+        v-model="value2"
+        color="red"
+        label="Special lines"
         left-label size="xs"
       />
         </q-card-section>
@@ -69,7 +75,9 @@ export default {
   setup() {
     return{
       value: ref(false),
-       value1: ref(false)
+       value1: ref(false),
+       value2: ref(false),
+       
     }
     
     
