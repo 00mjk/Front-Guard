@@ -16,7 +16,8 @@
             color: #282828;
           "
         >
-          <q-breadcrumbs-el label="HOME" />
+         
+          <a href="./">   <q-breadcrumbs-el  label="HOME"  /></a>  
         </q-breadcrumbs>
       </div>
     </div>

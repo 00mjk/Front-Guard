@@ -1,6 +1,6 @@
 <template>
-  <q-list bordered class="rounded-borders">
-    <q-expansion-item>
+  <q-list class="rounded-borders ">
+    <q-expansion-item >
       <template v-slot:header class="wrap">
         <q-item-section avatar style="display: inline; padding-top: 8px">
           <img class="moneco" src="../assets/Walk.svg" />
@@ -72,11 +72,11 @@
           Time="9"
           Distance="520"
           BusStop="Leonardo Hotel Wolfsburg City Center"
-          Walk=true
+          Walk="true"
         />
         <card-results-line
           Hour="12:29"
-          Line=201
+          Line="201"
           Color="#D41217"
           Number="201"
           BusStop="Kuntsmuseum"
@@ -85,22 +85,23 @@
         />
         <card-results-line
           Hour="12:36"
-          Line=212
+          Line="212"
           BusStop="ZOB Bay 8"
           BusStops="1"
           Number="212"
           Time="2"
+          Color="#F07E12"
         />
         <card-results-line
           Hour="12:38"
-          Walk=true
+          Walk="true"
           BusStop="Feuerwehr"
           Distance="300"
           Time="6"
         />
         <card-results-line
           Hour="12:38"
-          Final=true
+          Final="true"
           BusStop="Volkswagen AutoMuseum"
         />
 
@@ -126,7 +127,68 @@ export default defineComponent({
 });
 </script>
 
+
+
 <style>
+body.desktop .q-focus-helper {
+  background: none;
+  opacity: 1;
+  border: 1px solid rgba(235, 46, 45, 0.6);
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  transition: all ease-in-out 0.3s;
+  pointer-events: none;
+}
+
+
+body.desktop .q-focus-helper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-radius: inherit;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+body.desktop .q-focusable:focus > .q-focus-helper,
+body.desktop .q-manual-focusable--focused > .q-focus-helper,
+body.desktop .q-hoverable:hover > .q-focus-helper {
+  background: none;
+  opacity: 1;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+body.desktop .q-focus-helper::before {
+  background: none;
+  width: 1px;
+  background: #d92127;
+  height: 3px;
+  margin: 0 50%;
+  transition: all ease-in-out 0.3s;
+  top: initial;
+  bottom: 0;
+}
+
+body.desktop .q-focusable:focus > .q-focus-helper::before,
+body.desktop .q-manual-focusable--focused > .q-focus-helper::before,
+body.desktop .q-hoverable:hover > .q-focus-helper::before {
+  opacity: 1;
+  width: 100%;
+  margin: 0;
+}
+
+body.desktop .q-focusable:focus > .q-focus-helper::after,
+body.desktop .q-manual-focusable--focused > .q-focus-helper::after,
+body.desktop .q-hoverable:hover > .q-focus-helper::after {
+  opacity: 0;}
+
 .col-lineheader::before {
   content: "";
   display: inline-block;
@@ -204,19 +266,5 @@ legend {
   height: 26px;
   text-align: center;
   justify-content: center;
-}
-
-.numero {
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  justify-content: center;
-  text-align: center;
-
-  /* Neutral (Dark)/00 */
-
-  color: #ffffff;
 }
 </style>

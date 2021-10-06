@@ -16,7 +16,9 @@
             color: #282828;
           "
         >
+          <a  style="text-decoration: none;" href="./" >
           <q-breadcrumbs-el label="HOME / TRIP PLANNER" />
+          </a>
         </q-breadcrumbs>
       </div>
     </div>
@@ -97,11 +99,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-sm-12 col-xs-12 q-mb-lg q-ma-xl">
-            <card-map Header="Rathaus" />
+          <div class="col-md-4 col-sm-6 col-xs-12 q-mb-lg q-ma-xl">
+            <card-map Header="Imperial" />
           </div>
 
-          <div class="col-md-4 col-sm-12 col-xs-12 q-mb-lg q-ma-xl">
+          <div class="col-md-4 col-sm-6 col-xs-12 q-mb-lg q-ma-xl">
             <card-map />
           </div>
         </div>
@@ -121,3 +123,8 @@ export default defineComponent({
   setup() {},
 });
 </script>
+<style scoped>
+.mapa{
+  border-radius: 16px;
+}
+</style>

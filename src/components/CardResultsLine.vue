@@ -42,9 +42,7 @@
           </div>
 
           <div class="col-md-2 col-sm-2 center">
-            <div class="box moneco" :style="style">
-              <p class="numero">{{ Line }}</p>
-            </div>
+            <line-number :Color="Color" :Line="Line"/>
           </div>
 
           <div class="col-md-8 col-sm-2">
@@ -56,9 +54,10 @@
           <div class="col-md-2 col-sm-2"></div>
 
           <div
-            class="col-md-2 col-sm-2 center q-mt-sm col-line"
-            style="margin-top: -2px"
-          ></div>
+            class="col-md-2 col-sm-2 center q-mt-sm "
+            style="margin-top: -2px" 
+          ><span :style="styles" class="col-line" > </span>
+          </div>
 
           <div class="col-md-8 col-sm-2">
             <legend>{{ BusStops }} bus stops</legend>
@@ -74,7 +73,7 @@
       <div class="row">
         <div class="col-md-2 col-sm-2">
           <div style="display: inline">
-            <legend style="margin-top: 5px">{{ Hour }}</legend>
+            <legend style="margin-top: 5px;">{{ Hour }}</legend>
           </div>
         </div>
 
@@ -108,14 +107,16 @@
   display: inline-block;
   height: 55px;
 
-  border: 2px solid #d41217;
+  
 }
 </style>
 
 <script>
 import { defineComponent } from "@vue/composition-api";
+import LineNumber from "./LineNumber.vue";
 
 export default defineComponent({
+  components: { LineNumber },
   props: {
     Type: String,
     Distance: String,
@@ -133,6 +134,10 @@ export default defineComponent({
     style() {
       return "background: " + this.Color + ";";
     },
+    styles() {
+      return "border: 2px solid " + this.Color + ";";
+    },
+    
   },
 
   setup() {
