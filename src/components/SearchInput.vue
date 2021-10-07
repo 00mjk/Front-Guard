@@ -50,9 +50,8 @@
 
 <script>
 import { event } from "quasar";
-import { ref, computed } from "vue";
+import { ref } from "vue";
 
-const { stopAndPrevent } = event;
 
 export default {
   props: {
