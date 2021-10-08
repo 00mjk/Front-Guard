@@ -1,12 +1,10 @@
 <template>
-  <q-list class="rounded-borders ">
-    <q-expansion-item >
+  <q-list class="rounded-borders">
+    <q-expansion-item>
       <template v-slot:header class="wrap">
         <q-item-section avatar style="display: inline; padding-top: 8px">
           <img class="moneco" src="../assets/Walk.svg" />
-          <div class="box moneco">
-            <p class="numero">212</p>
-          </div>
+          <line-number Color="#F07E12" Line="201" class="moneco" />
           <img class="moneco" src="../assets/Walk.svg" />
         </q-item-section>
 
@@ -114,9 +112,10 @@
 <script>
 import { defineComponent } from "@vue/composition-api";
 import CardResultsLine from "./CardResultsLine.vue";
+import LineNumber from "./LineNumber.vue";
 
 export default defineComponent({
-  components: { CardResultsLine },
+  components: { CardResultsLine, LineNumber },
   props: {
     Min: String,
     Depart: String,
@@ -126,8 +125,6 @@ export default defineComponent({
   setup() {},
 });
 </script>
-
-
 
 <style>
 body.desktop .q-focus-helper {
@@ -140,7 +137,6 @@ body.desktop .q-focus-helper {
   transition: all ease-in-out 0.3s;
   pointer-events: none;
 }
-
 
 body.desktop .q-focus-helper {
   position: absolute;
@@ -187,7 +183,8 @@ body.desktop .q-hoverable:hover > .q-focus-helper::before {
 body.desktop .q-focusable:focus > .q-focus-helper::after,
 body.desktop .q-manual-focusable--focused > .q-focus-helper::after,
 body.desktop .q-hoverable:hover > .q-focus-helper::after {
-  opacity: 0;}
+  opacity: 0;
+}
 
 .col-lineheader::before {
   content: "";
