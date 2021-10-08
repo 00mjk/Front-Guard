@@ -79,7 +79,7 @@
 
         <div class="col-md-2 col-sm-2 center">
           <img
-            style="width: 50%"
+            style="height: 25px;"
             src="../assets/end_journey.svg"
             class="moneco"
           />
