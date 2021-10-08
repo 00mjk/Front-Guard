@@ -4,9 +4,9 @@
             <template v-slot:header class="wrap">
                 <div class="row bus-route">
                     <q-item-section avatar class="q-pr-none">
-                        <span class="iconify" data-icon="mdi:walk" style="color: #486a89;" data-width="30" data-height="30"></span>
+                        <span class="iconify" data-icon="mdi:walk"></span>
                         <line-number Line="212" Color="#F07E12" />
-                       <span class="iconify" data-icon="mdi:walk" style="color: #486a89;" data-width="30" data-height="30"></span>
+                        <span class="iconify" data-icon="mdi:walk"></span>
                     </q-item-section>
 
                     <q-item-section class="time-route">
@@ -28,7 +28,10 @@
                         </div>
 
                         <div class="arrow">
-                            <img src="../assets/Group55.svg" />
+                            <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="0.9" height="9" fill="#E6E6E6" />
+                                <path d="M1.80005 0H3.60005L6.30005 4.5L3.60005 9H1.80005V0Z" fill="#E6E6E6" />
+                            </svg>
                         </div>
 
                         <div class="arrive-route">
@@ -44,7 +47,7 @@
                             <span class="date">{{ Price }} €</span>
                         </p>
                         <p class="info-tarif">
-                            <a href="#"><img src="../assets/Info.svg" /></a>
+                            <a href="#"><span class="iconify" data-icon="mdi:information"></span></a>
                         </p>
                     </div>
                 </div>
@@ -53,9 +56,9 @@
             <q-card>
                 <q-card-section>
                     <div class="actions">
-                        <a href="#"><img src="../assets/Download.svg" /></a>
-                        <a href="#"><img src="../assets/Link.svg" /></a>
-                        <a href="#"><img src="../assets/Print.svg" /></a>
+                        <a href="#"><span class="iconify" data-icon="mdi:download-box-outline"></span></a>
+                        <a href="#"><span class="iconify" data-icon="mdi:link-variant"></span></a>
+                        <a href="#"><span class="iconify" data-icon="mdi:printer-outline"></span></a>
                     </div>
                 </q-card-section>
 
@@ -118,6 +121,11 @@ export default defineComponent({
                 flex-direction: inherit;
                 height: 40px;
                 gap: 5px;
+
+                .iconify {
+                    font-size: 28px;
+                    color: #486a89;
+                }
             }
 
             .time-route {
@@ -179,6 +187,13 @@ export default defineComponent({
                 a {
                     display: flex;
                     align-items: center;
+                    color: #ddd;
+                    font-size: 15px;
+                    transition: all ease-in-out 0.3s;
+
+                    &:hover {
+                        color: #282828;
+                    }
                 }
             }
         }
@@ -213,6 +228,13 @@ export default defineComponent({
                 .date {
                     color: #282828;
                 }
+
+                .arrow {
+                    rect,
+                    path {
+                        fill: #bbb;
+                    }
+                }
             }
         }
     }
@@ -234,6 +256,14 @@ export default defineComponent({
                 .date {
                     color: #282828;
                 }
+
+                a {
+                    color: #ccc;
+
+                    &:hover {
+                        color: #282828;
+                    }
+                }
             }
         }
 
@@ -242,7 +272,7 @@ export default defineComponent({
                 background: none;
 
                 .q-card__section {
-                    padding: 8px 16px 12px;
+                    padding: 12px 16px 16px;
                 }
 
                 .actions {
@@ -253,6 +283,13 @@ export default defineComponent({
                     a {
                         display: flex;
                         align-items: center;
+                        font-size: 18px;
+                        color: #cdcdcd;
+                        transition: all ease-in-out 0.3s;
+
+                        &:hover {
+                            color: #282828;
+                        }
                     }
                 }
             }
