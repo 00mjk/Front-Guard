@@ -2,23 +2,19 @@
   <q-list class="rounded-borders">
     <q-expansion-item>
       <template v-slot:header class="wrap">
-        <q-item-section avatar style="display: inline; padding-top: 8px">
-          <img class="moneco" src="../assets/Walk.svg" />
-          <line-number Color="#F07E12" Line="201" class="moneco" />
-          <img class="moneco" src="../assets/Walk.svg" />
-        </q-item-section>
-
-        <q-item-section style="align-items: end">
-          <div class="row items-center" style="margin-top: -6px">
-            <div style="display: block">
-              <p class="headerNumber">{{ Min }}</p>
-              <legend style="margin-top: -7px">MIN</legend>
+        <div class="row bus-route">
+          <q-item-section avatar class="q-pr-none">
+            <img class="moneco" src="../assets/Walk.svg" />
+            <div class="box moneco">
+              <p class="numero">212</p>
             </div>
-          </div>
-        </q-item-section>
+            <img class="moneco" src="../assets/Walk.svg" />
+          </q-item-section>
 
-        <div class="row" style="width: 100%">
-          <div style="width: 100%" class="col col-lineheader"></div>
+          <q-item-section class="time-route" style="">
+            <p class="headerNumber">{{ Min }}</p>
+            <legend style="">MIN</legend>
+          </q-item-section>
         </div>
 
         <div class="row" style="width: 100%; margin-top: 10px">
@@ -112,10 +108,10 @@
 <script>
 import { defineComponent } from "@vue/composition-api";
 import CardResultsLine from "./CardResultsLine.vue";
-import LineNumber from "./LineNumber.vue";
+
 
 export default defineComponent({
-  components: { CardResultsLine, LineNumber },
+  components: { CardResultsLine },
   props: {
     Min: String,
     Depart: String,
@@ -126,11 +122,41 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style lang="scss">
+.q-list {
+  transition: all ease-in-out 0.2s;
+
+  &:hover {
+    background: #fff;
+    opacity: 1;
+    margin-top: 18px;
+    margin-bottom: -2px;
+    box-shadow: 0px 3px 6px rgba(17, 17, 17, 0.1);
+  }
+}
+
+.bus-route {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+
+  .q-item__section {
+    display: flex;
+    align-items: center;
+    flex-direction: inherit;
+  }
+
+  .time-route {
+    flex: none;
+    justify-content: center;
+  }
+}
+
 body.desktop .q-focus-helper {
   background: none;
   opacity: 1;
-  border: 1px solid rgba(235, 46, 45, 0.6);
   top: 0;
   left: 0;
   border-radius: 16px;
@@ -157,8 +183,6 @@ body.desktop .q-manual-focusable--focused > .q-focus-helper,
 body.desktop .q-hoverable:hover > .q-focus-helper {
   background: none;
   opacity: 1;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
 body.desktop .q-focus-helper::before {
@@ -170,6 +194,7 @@ body.desktop .q-focus-helper::before {
   transition: all ease-in-out 0.3s;
   top: initial;
   bottom: 0;
+  display: none;
 }
 
 body.desktop .q-focusable:focus > .q-focus-helper::before,
@@ -178,12 +203,14 @@ body.desktop .q-hoverable:hover > .q-focus-helper::before {
   opacity: 1;
   width: 100%;
   margin: 0;
+  display: none;
 }
 
 body.desktop .q-focusable:focus > .q-focus-helper::after,
 body.desktop .q-manual-focusable--focused > .q-focus-helper::after,
 body.desktop .q-hoverable:hover > .q-focus-helper::after {
   opacity: 0;
+  display: none;
 }
 
 .col-lineheader::before {
@@ -212,10 +239,6 @@ legend {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
-
-  /* Neutral (Dark)/40 */
-
   color: #9a9a9a;
 }
 .date {
@@ -231,7 +254,6 @@ legend {
 }
 .rounded-borders {
   background: #ffffff;
-  /* Shadow/Shadow Card Form */
 
   box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.06);
   border-radius: 16px;
@@ -247,11 +269,8 @@ legend {
   font-weight: bold;
   font-size: 21px;
   line-height: 140%;
-  /* or 29px */
 
   text-align: center;
-
-  /* Neutral (Dark)/80 */
 
   color: #282828;
 }

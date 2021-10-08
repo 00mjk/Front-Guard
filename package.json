@@ -27,6 +27,8 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",
     "eslint-webpack-plugin": "^2.4.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
     "vue-cli-plugin-vue-next": "~0.1.4",
     "vue-svg-loader": "^0.16.0"
   },
