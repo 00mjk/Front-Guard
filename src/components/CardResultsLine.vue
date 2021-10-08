@@ -9,7 +9,7 @@
         </div>
 
         <div class="col-md-2 col-sm-2 center">
-          <img class="moneco" src="../assets/Walk.svg" />
+          <span class="iconify" data-icon="mdi:walk" style="color: #486a89;" data-width="30" data-height="30"></span>
         </div>
 
         <div class="col-md-8 col-sm-2">

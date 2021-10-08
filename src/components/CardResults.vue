@@ -4,9 +4,9 @@
             <template v-slot:header class="wrap">
                 <div class="row bus-route">
                     <q-item-section avatar class="q-pr-none">
-                        <span class="iconify" data-icon="mdi:walk" style="color: #486a89;" data-width="34" data-height="34"></span>
+                        <span class="iconify" data-icon="mdi:walk" style="color: #486a89;" data-width="30" data-height="30"></span>
                         <line-number Line="212" Color="#F07E12" />
-                       <span class="iconify" data-icon="mdi:walk" style="color: #486a89;" data-width="34" data-height="34"></span>
+                       <span class="iconify" data-icon="mdi:walk" style="color: #486a89;" data-width="30" data-height="30"></span>
                     </q-item-section>
 
                     <q-item-section class="time-route">
