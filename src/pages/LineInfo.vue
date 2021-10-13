@@ -34,7 +34,7 @@
         <line-info-card Color="#31A836" FirstStop="Hauptbahnhof" LastStop="Neindorf" Line="215"/>
         </div>
         <div class="col-md-8">
-       
+            <list-line/>
         </div>
     </div>
 
@@ -138,11 +138,13 @@ import LineInfoCard from "src/components/LineInfoCard.vue";
 import InputGenericoHome from "src/components/InputGenericoHome.vue";
 import DateInput from "src/components/DateInputOn.vue";
 import TimeInput from "src/components/TimeInput.vue";
+import ListLine from "src/components/ListLine.vue";
 
 export default defineComponent({
   components: { LineInfoCard,InputGenericoHome,
     DateInput,
-    TimeInput },
+    TimeInput,
+    ListLine },
   setup() {},
 });
 </script>
