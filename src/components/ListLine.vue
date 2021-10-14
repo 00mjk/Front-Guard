@@ -74,14 +74,7 @@ export default defineComponent({
     click: function (id) {
       click(id);
 
-      /*
-      var elementos = document.getElementsByClassName("q-timeline__content");
-      for (let i = 0; i < elementos.length; i++) {
-        elementos[i].addEventListener("click", click(i));
-        console.log(elementos);
-      }
-
-      */
+    
 
       function click(elemento) {
         console.log("click");
@@ -110,8 +103,5 @@ export default defineComponent({
   background-color: darkgreen;
 }
 
-.q-timeline__dot::before {
-  background: white !important;
-  border: 3px solid !important;
-}
+
 </style>
