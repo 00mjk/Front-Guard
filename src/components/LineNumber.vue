@@ -44,5 +44,6 @@ export default defineComponent({
     letter-spacing: 0.03em;
     color: #ffffff;
     height: 13px;
+    
 }
 </style>

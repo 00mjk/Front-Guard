@@ -1,3 +1,4 @@
+
 <template>
   <q-timeline color="green" style="margin-top: 150px">
     <q-timeline-entry title="Hauptbahnhof" v-on:click="click(0)">
@@ -5,7 +6,6 @@
         <card-map Header="Imperial" />
       </div>
     </q-timeline-entry>
-
     <q-timeline-entry title="ZOB Bussteig 3" v-on:click="click(1)">
       <div class="contenido" id="1" style="display: none">
         <card-map Header="Imperial" />
@@ -39,7 +39,7 @@
     <q-timeline-entry title="Emmausheim" v-on:click="click(7)">
       <div class="contenido" id="7" style="display: none">
         <card-map Header="Imperial" />
-      </div>
+      </div> 
     </q-timeline-entry>
     <q-timeline-entry title="Steimker Berg" v-on:click="click(8)">
       <div class="contenido" id="8" style="display: none">
@@ -60,9 +60,7 @@
       <div class="contenido" id="11" style="display: none">
         <card-map Header="Imperial" />
       </div>
-    </q-timeline-entry>
-
-    --
+    </q-timeline-entry> 
     <q-timeline-entry title="Nordsteimke, Hohe Eichen" v-on:click="click(12)">
       <div class="contenido" id="12" style="display: none">
         <card-map Header="Imperial" />
@@ -116,6 +114,10 @@
   </q-timeline>
 </template>
 <script>
+
+/*Cambiar los argumentos de los eventos click por $event , y realizar los cambios oportunos en el codigo */
+
+
 import { defineComponent } from "@vue/composition-api";
 import CardMap from "./CardMap.vue";
 
@@ -129,7 +131,7 @@ export default defineComponent({
     
 
       function click(elemento) {
-        console.log("click");
+        
 
         if (
           document.getElementsByClassName("contenido")[elemento].style
@@ -141,9 +143,7 @@ export default defineComponent({
           document.getElementsByClassName("contenido")[elemento].style.display =
             "none";
         }
-        console.log(
-          document.getElementsByClassName("contenido")[elemento].style.display
-        );
+       
       }
     },
   },

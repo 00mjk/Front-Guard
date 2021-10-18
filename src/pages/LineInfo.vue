@@ -123,8 +123,8 @@
       </div>
 
       <div class="row items-end">
-        <div class="col-md-2">
-          <input type="button" class="btnsubmit" onclick="location.href='../#/TripPlanner'" value="Plan My trip" />
+        <div class="col-md-12">
+          <input style="float: right;" type="button" class="btnsubmit" onclick="location.href='../#/TripPlanner'" value="Plan My trip" />
         </div>
       </div>
     </form>
