@@ -148,7 +148,7 @@
         <hr class="separator" />
       </div>
       <div class="q-pa-md" style="text-align: center; margin-top: -10px;">
-        <input type="button" class="btnmap" value="See map" />
+        <input  style="border: 0;" type="button" class="btnmap" value="See map" />
       </div>
     </q-card-section>
   </q-card>

@@ -179,6 +179,15 @@ ul::after {
   background: rgb(49, 168, 54) !important;
 }
 
+.q-timeline__entry:last-child .q-timeline__dot::after {
+  margin-top: -5px !important;
+margin-bottom: 10px !important;
+width: 4px !important;
+opacity: 1 !important;
+content: "";
+   background: rgb(49, 168, 54) !important;
+}
+
 .raya .q-timeline__dot::before {
   display: none;
 }
