@@ -41,7 +41,7 @@
         <div class="cardalert">
           <div class="q-pa-md">
             <div class="contenedorSlider">
-              <h4 style="font-size: 21px">
+              <h4 style="font-size: 21px; margin-top: -5px;">
                 Alerts<span style="color: #d92127; font-size: 21px">.</span>
               </h4>
 
@@ -185,7 +185,7 @@
               value="DEPART"
               checked
             />
-            <label for="radioApple">DEPART</label>
+            <label for="radioApple" style="margin-right: 16px;">DEPART</label>
 
             <input
               type="radio"
@@ -193,7 +193,7 @@
               name="radioFruit"
               value="ARRIVE"
             />
-            <label for="radioBanana">ARRIVE</label>
+            <label for="radioBanana" style="margin-right: 16px;" >ARRIVE</label>
 
             <input
               type="radio"
@@ -201,7 +201,7 @@
               name="radioFruit"
               value="REGULAR JORNEY"
             />
-            <label for="radioOrange">REGULAR JORNEY</label>
+            <label for="radioOrange" style="margin-right: 16px;" >REGULAR JORNEY</label>
           </div>
         </div>
 
