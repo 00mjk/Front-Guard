@@ -41,7 +41,7 @@
         <div class="cardalert">
           <div class="q-pa-md">
             <div class="contenedorSlider">
-              <h4 style="font-size: 21px; margin-top: -5px;">
+              <h4 style="font-size: 21px; margin-top: -5px">
                 Alerts<span style="color: #d92127; font-size: 21px">.</span>
               </h4>
 
@@ -56,6 +56,7 @@
                 arrows
                 height="150px"
                 class="text-purple rounded-borders"
+                
               >
                 <q-carousel-slide
                   name="style"
@@ -71,8 +72,7 @@
                       size="36px"
                       style="margin-left: -120px; margin-right: 8px"
                     />
-                    Failure of the passenger information display
-                   
+                    Failure of the passenger information display 
                   </div>
 
                   <div
@@ -184,8 +184,9 @@
               name="radioFruit"
               value="DEPART"
               checked
+
             />
-            <label for="radioApple" style="margin-right: 16px;">DEPART</label>
+            <label for="radioApple" style="margin-right: 16px">DEPART</label>
 
             <input
               type="radio"
@@ -193,7 +194,7 @@
               name="radioFruit"
               value="ARRIVE"
             />
-            <label for="radioBanana" style="margin-right: 16px;" >ARRIVE</label>
+            <label for="radioBanana" style="margin-right: 16px">ARRIVE</label>
 
             <input
               type="radio"
@@ -201,7 +202,9 @@
               name="radioFruit"
               value="REGULAR JORNEY"
             />
-            <label for="radioOrange" style="margin-right: 16px;" >REGULAR JORNEY</label>
+            <label for="radioOrange" style="margin-right: 16px"
+              >REGULAR JORNEY</label
+            >
           </div>
         </div>
 
@@ -222,6 +225,7 @@
             class="btnsubmit"
             onclick="location.href='../#/TripPlanner'"
             value="Plan My trip"
+
           />
         </div>
       </div>

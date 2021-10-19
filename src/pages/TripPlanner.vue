@@ -102,7 +102,7 @@
           <div class="col-md-4 col-sm-6 col-xs-12 q-mb-lg q-ma-xl">
             <card-map Header="Imperial" />
           </div>
-
+            <div class="col-md-1 "></div>
           <div class="col-md-4 col-sm-6 col-xs-12 q-mb-lg q-ma-xl">
           <line-card Header="WVG-08821"/>
           </div>
