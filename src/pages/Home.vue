@@ -209,7 +209,7 @@
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-12 q-pl-md">
-          <time-input Header="To"> </time-input>
+          <time-input Header="At"> </time-input>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-12 q-pl-md">
