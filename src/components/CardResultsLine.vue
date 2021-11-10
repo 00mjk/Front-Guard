@@ -7,7 +7,7 @@
                 </div>
 
                 <div class="sector-line center">
-                    <span class="iconify" data-icon="mdi:walk" style="color: #486a89" data-width="30" data-height="30"></span>
+                    <span class="iconify" data-icon="mdi:walk"></span>
                 </div>
 
                 <div class="sector-text q-pl-sm">
@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="sector-time"></div>
 
-                <div class="sector-line center q-mt-sm">
+                <div class="sector-line center">
                     <img src="../assets/Line215.svg" class="moneco" />
                 </div>
 
