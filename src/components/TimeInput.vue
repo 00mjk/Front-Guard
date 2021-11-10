@@ -6,7 +6,7 @@
       </q-card-section>
 
       <div class="q-gutter-y-md column">
-        <q-input v-model="time" filled type="time" >
+        <q-input v-model="time" filled type="time"  >
           <template v-slot:append> </template>
         </q-input>
       </div>

@@ -50,7 +50,7 @@
                     <div class="sector-line center q-mt-sm" style="margin-top: -2px"><span :style="styles" class="col-line"> </span></div>
 
                     <div class="sector-text q-pl-sm">
-                        <legend>{{ BusStops }} bus stops</legend>
+                        <legend>{{ BusStops }} bus stops</legend><br>
                         <legend>{{ Time }} minutes</legend>
                     </div>
                 </div>

@@ -16,8 +16,7 @@
             color: #282828;
           "
         >
-         
-          <a href="./">   <q-breadcrumbs-el  label="HOME"  /></a>  
+          <a href="./"> <q-breadcrumbs-el label="HOME" /></a>
         </q-breadcrumbs>
       </div>
     </div>
@@ -41,38 +40,101 @@
       <div class="col-md-4 col-sm-12">
         <div class="cardalert">
           <div class="q-pa-md">
-            <q-carousel
-              v-model="slide"
-              swipeable
-              animated
-              :control-type="controlType"
-              control-color="dark"
-              navigation
-              padding
-              arrows
-              height="190px"
-              class="text-purple rounded-borders"
-            >
-              <q-carousel-slide name="style" class="column no-wrap flex-center">
-                <q-icon name="style" size="36px" />
-                <div class="q-mt-md text-center text-black">Slider1</div>
-              </q-carousel-slide>
-              <q-carousel-slide name="tv" class="column no-wrap flex-center">
-                <q-icon class="left:true;" name="live_tv" size="56px" />
-                <div class="q-mt-md text-center text-black">Slider2</div>
-              </q-carousel-slide>
-              <q-carousel-slide
-                name="layers"
-                class="column no-wrap flex-center"
+            <div class="contenedorSlider">
+              <h4 style="font-size: 21px; margin-top: -5px">
+                Alerts<span style="color: #d92127; font-size: 21px">.</span>
+              </h4>
+
+              <q-carousel
+                v-model="slide"
+                swipeable
+                animated
+                :control-type="controlType"
+                control-color="dark"
+                navigation
+                padding
+                arrows
+                height="150px"
+                class="text-purple rounded-borders"
+                
               >
-                <q-icon name="layers" size="56px" />
-                <div class="q-mt-md text-center text-black">Slider3</div>
-              </q-carousel-slide>
-              <q-carousel-slide name="map" class="column no-wrap flex-center">
-                <q-icon name="terrain" size="56px" />
-                <div class="q-mt-md text-center text-black">Slider4</div>
-              </q-carousel-slide>
-            </q-carousel>
+                <q-carousel-slide
+                  name="style"
+                  class="column no-wrap flex-center"
+                >
+                  <div
+                    style="font-size: 12px"
+                    class="q-mt-md text-black text-weight-bold"
+                  >
+                    <q-icon
+                      name="warning"
+                      class="text-orange"
+                      size="36px"
+                      style="margin-left: -120px; margin-right: 8px"
+                    />
+                    Failure of the passenger information display 
+                  </div>
+
+                  <div
+                    style="font-size: 12px; margin-left: -3px"
+                    class="q-mt-md text-black"
+                  >
+                    Due to technical problems, the passenger information display
+                    may fail in the entire city area. We apologize for the
+                    inconvenience and ask for your understanding.
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide name="tv" class="column no-wrap flex-center">
+                  <div
+                    style="font-size: 12px"
+                    class="q-mt-md text-black text-weight-bold"
+                  >
+                    <q-icon
+                      name="warning"
+                      class="text-orange"
+                      size="36px"
+                      style="margin-left: -120px; margin-right: 8px"
+                    />
+                    Failure of the passenger information display
+                  </div>
+
+                  <div
+                    style="font-size: 12px; margin-left: -3px"
+                    class="q-mt-md text-black"
+                  >
+                    Due to technical problems, the passenger information display
+                    may fail in the entire city area. We apologize for the
+                    inconvenience and ask for your understanding.
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide
+                  name="layers"
+                  class="column no-wrap flex-center"
+                >
+                  <div
+                    style="font-size: 12px"
+                    class="q-mt-md text-black text-weight-bold"
+                  >
+                    <q-icon
+                      name="warning"
+                      class="text-orange"
+                      size="36px"
+                      style="margin-left: -120px; margin-right: 8px"
+                    />
+                    Failure of the passenger information display
+                  </div>
+
+                  <div
+                    style="font-size: 12px; margin-left: -3px"
+                    class="q-mt-md text-black"
+                  >
+                    Due to technical problems, the passenger information display
+                    may fail in the entire city area. We apologize for the
+                    inconvenience and ask for your understanding.
+                  </div>
+                </q-carousel-slide>
+              </q-carousel>
+            </div>
           </div>
         </div>
       </div>
@@ -122,8 +184,9 @@
               name="radioFruit"
               value="DEPART"
               checked
+
             />
-            <label for="radioApple">DEPART</label>
+            <label for="radioApple" style="margin-right: 16px">DEPART</label>
 
             <input
               type="radio"
@@ -131,7 +194,7 @@
               name="radioFruit"
               value="ARRIVE"
             />
-            <label for="radioBanana">ARRIVE</label>
+            <label for="radioBanana" style="margin-right: 16px">ARRIVE</label>
 
             <input
               type="radio"
@@ -139,12 +202,14 @@
               name="radioFruit"
               value="REGULAR JORNEY"
             />
-            <label for="radioOrange">REGULAR JORNEY</label>
+            <label for="radioOrange" style="margin-right: 16px"
+              >REGULAR JORNEY</label
+            >
           </div>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-12 q-pl-md">
-          <time-input Header="To"> </time-input>
+          <time-input Header="At"> </time-input>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-12 q-pl-md">
@@ -152,9 +217,16 @@
         </div>
       </div>
 
-      <div class="row items-end">
-        <div class="col-md-2">
-          <input type="button" class="btnsubmit" onclick="location.href='../#/TripPlanner'" value="Plan My trip" />
+      <div class="row">
+        <div class="col-md-12">
+          <input
+            style="float: right"
+            type="button"
+            class="btnsubmit"
+            onclick="location.href='../#/TripPlanner'"
+            value="Plan My trip"
+
+          />
         </div>
       </div>
     </form>

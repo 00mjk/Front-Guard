@@ -102,9 +102,9 @@
           <div class="col-md-4 col-sm-6 col-xs-12 q-mb-lg q-ma-xl">
             <card-map Header="Imperial" />
           </div>
-
+            <div class="col-md-1 "></div>
           <div class="col-md-4 col-sm-6 col-xs-12 q-mb-lg q-ma-xl">
-            <card-map />
+          <line-card Header="WVG-08821"/>
           </div>
         </div>
       </div>
@@ -117,9 +117,10 @@ import { defineComponent } from "@vue/composition-api";
 import CardMap from "src/components/CardMap.vue";
 import CardResults from "src/components/CardResults.vue";
 import InputGenericoHome from "src/components/InputGenericoHome.vue";
+import LineCard from "src/components/LineCard.vue";
 
 export default defineComponent({
-  components: { InputGenericoHome, CardMap, CardResults },
+  components: { InputGenericoHome, CardMap, CardResults, LineCard },
   setup() {},
 });
 </script>
