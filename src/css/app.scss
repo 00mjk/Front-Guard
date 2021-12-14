@@ -1,235 +1,279 @@
 // app global css in SCSS form
-:root{
+:root {
+    /* main color */
+    --background: #f3f3f9; /* color principal 600 */
 
-  --primary600: rgba(235, 46, 45, 1)
-  --neutral10: rgba(230, 230, 230, 1)
-  --neutral20: rgba(205, 205, 205, 1)
-  --neutral40: rgba(154, 154, 154, 1)
-  --neutral60: rgba(104, 104, 104, 1)
-  --neutral80: rgba(40, 40, 40, 1)
-  --neutral100: rgba(0, 0, 0, 1)
-  --neutral00: rgba(255, 255, 255, 1)
-  --neutral05: rgba(242, 242, 242, 1)
+    /* main color */
+    --main: #eb2e2d; /* color principal 600 */
+    --main-rgb: 235, 46, 45; /* color principal para usar en rgb */
+    --main-700: #d92127; /* color principal dark 700 */
 
+    /* neutral */
+    --neutral-05: #f2f2f2; /* color neutral 05 */
+    --neutral-10: #e6e6e6; /* color neutral 10 */
+    --neutral-20: #cdcdcd; /* color neutral 20 */
+    --neutral-40: #9a9a9a; /* color neutral 40 */
+    --neutral-60: #686868; /* color neutral 60 */
+    --neutral-80: #282828; /* color neutral 80 */
+
+    /* black & white */
+    --white: #ffffff; /* color white */
+    --white-rgb: 255, 255, 255; /* color white rgb */
+    --black: #000000; /* color black */
+    --black-rgb: 0, 0, 0; /* color black rgb */
+
+    /* feedback color */
+    --error-l: #ffe2d7; /* color error light */
+    --error: #ffb59c; /* color error */
+    --error-d: #ff6c39; /* color error dark */
+    --success-l: #e3f2e0; /* color success light */
+    --success: #8dc881; /* color success */
+    --success-d: #459a33; /* color success dark */
+    --warning-l: #fff1b3; /* color warning light */
+    --warning: #ffe780; /* color warning */
+    --warning-d: #f8ca00; /* color warning dark */
+    --info-l: #cce8ec; /* color info light */
+    --info: #7fc5ce; /* color info */
+    --inf-d: #008c9e; /* color info dark */
+
+    /* others */
+    --typo: "Source Sans Pro", sans-serif; /* tipografía del site */
+    --transition: all 0.3s ease-in-out; /* transición corta de elementos tipo button, enlaces, velos etc */
+    --shadow-soft: 0px 8px 16px 0px rgba(17, 17, 17, 0.06);
+
+    /* line colors */
+    --c201: #d41217; /* bus line 201 */
+    --c201-rgb: 212, 18, 23; /* bus line 201 rgb */
+
+    --c202: #31b5a4; /* bus line 202 */
+    --c202-rgb: 49, 181, 164; /* bus line 202 rgb */
+
+    --c203: #6a509d; /* bus line 203 */
+    --c203-rgb: 106, 80, 157; /* bus line 203 rgb */
+
+    --c204: #ebb500; /* bus line 204 */
+    --c204-rgb: 235, 181, 0; /* bus line 204 rgb */
+
+    --c211: #21b9e6; /* bus line 211 */
+    --c211-rgb: 33, 185, 230; /* bus line 211 rgb */
+
+    --c212: #f07e12; /* bus line 212 */
+    --c212-rgb: 240, 126, 18; /* bus line 212 rgb */
+
+    --c213: #28969e; /* bus line 213 */
+    --c213-rgb: 40, 150, 158; /* bus line 213 rgb */
+
+    --c215: #31a836; /* bus line 215 */
+    --c215-rgb: 49, 168, 54; /* bus line 215 rgb */
+
+    --c216: #afcb08; /* bus line 216 */
+    --c216-rgb: 175, 203, 8; /* bus line 216 rgb */
+
+    --c218: #097ec1; /* bus line 218 */
+    --c218-rgb: 9, 126, 193; /* bus line 218 rgb */
+
+    --c221: #911411; /* bus line 221 */
+    --c221-rgb: 145, 20, 17; /* bus line 221 rgb */
+
+    --c222: #0b696e; /* bus line 222 */
+    --c222-rgb: 11, 105, 110; /* bus line 222 rgb */
+
+    --c223: #4a3672; /* bus line 223 */
+    --c223-rgb: 74, 54, 114; /* bus line 223 rgb */
+
+    --c224: #c15b2b; /* bus line 224 */
+    --c224-rgb: 193, 91, 43; /* bus line 224 rgb */
+
+    --c225: #25762a; /* bus line 225 */
+    --c225-rgb: 37, 118, 42; /* bus line 225 rgb */
+
+    --c226: #879c21; /* bus line 226 */
+    --c226-rgb: 135, 156, 33; /* bus line 226 rgb */
+
+    --c227: #16507e; /* bus line 227 */
+    --c227-rgb: 22, 80, 126; /* bus line 227 rgb */
+
+    --c230: #108841; /* bus line 230 */
+    --c230-rgb: 16, 136, 65; /* bus line 230 rgb */
+
+    --c231: #fb379f; /* bus line 231 */
+    --c231-rgb: 251, 55, 159; /* bus line 231 rgb */
 }
 
+body {
+    font-family: var(--typo);
+    background: var(--background);
+}
 
 h1,
 h2,
 h3,
 h4,
 p {
-  font-family: Source Sans Pro, sans-serif;
-  margin: 0;
-  color: #282828;
+    font-family: var(--typo);
+    margin: 0;
+    color: var(--neutral-80);
 }
 
-.p-body1{
-  font-family: Source Sans Pro, sans-serif;
-  font-size: 16px;
-  line-height: 140%;
-  font-weight: 400;
+.p-body1 {
+    font-family: var(--typo);
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
 }
 
-.p-body2{
-  font-family: Source Sans Pro, sans-serif;
-  font-size: 14px;
-  
-  font-weight: 400;
-  line-height: 22.4px
+.p-body2 {
+    font-family: var(--typo);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
 }
 
-label{
-  font-family: Source Sans Pro, sans-serif;
-  font-size: 12px;
-  
-  font-weight: 400;
-  line-height: 140%;
-  color: #282828;
+label {
+    font-family: var(--typo);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--neutral-80);
 }
 
-legend{
-
-  font-family: Source Sans Pro, sans-serif;
-  font-size: 9px;
-  
-  font-weight: 400;
-  line-height: 140%;
+legend {
+    font-family: var(--typo);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 140%;
 }
 
 h1 {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 100%;
-  padding: 8px 0;
-}
-
-h4 {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 120%;
-  padding: 8px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%;
+    padding: 8px 0;
 }
 
 h2 {
-  font-size: 50px;
-  line-height: 110%;
-  font-weight: 600;
-  padding: 8px 0;
+    font-size: 50px;
+    line-height: 110%;
+    font-weight: 600;
+    padding: 8px 0;
 }
 
 h3 {
-  font-size: 37px;
-  line-height: 120%;
-  font-weight: 600;
-  padding: 8px 0;
+    font-size: 37px;
+    line-height: 120%;
+    font-weight: 600;
+    padding: 8px 0;
 }
+
+h4 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 8px 0;
+}
+
 p {
-  line-height: 140%;
-  font-weight: 700;
-  color: #282828;
+    line-height: 140%;
+    font-weight: 700;
+    color: var(--neutral-80);
 }
 
-.header-icons {
-  position: absolute;
-  right: 0;
-  display: flex;
-  padding-right: 16px;
-  justify-content: space-between;
-  margin: 12px;
+a {
+    text-decoration: none;
+    transition: var(--transition);
+
+    &:visited {
+        color: initial;
+    }
+
+    &:hover {
+        color: var(--main);
+    }
 }
 
-
-.header-icons img {
-  padding: 0 16px;
-
-
+.hrstyle {
+    height: 1px;
+    border: 0px;
+    background: var(--black);
 }
-.hrstyle{
-  height: 1px;
-border: 0px;
-background: black;
-}
-
-
-.footer{
-  
-
-  max-width: 1440px;
-   margin: 0 auto;
-    min-height: 0px;
-     padding: 16px;
-  
-}
-
-
-.menucabecera {
-  left: 45%;
-  right: -20%;
-  top: 20.83%;
-  bottom: 33.33%;
-  width: 100%;
-
-  /* Neutral (Dark)/80 */
-
-  transform: rotate(90deg);
-}
-
-
 
 .texto1footer {
- 
-  
-
-  /* Common/Label */
-
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-
-  /* Neutral (Dark)/80 */
-
-  color: #282828;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--neutral-80);
 }
 
 .texto2footer {
-  
- 
-  
-
-  /* Common/Body1 */
-
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 140%;
-  /* or 20px */
-
-  /* Neutral (Dark)/80 */
-
-  color: #282828;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--neutral-80);
 }
 
-
-
-
-
-
 .textohotline {
- 
-  
-  
-
-  /* Common/Label */
-
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-
-  /* Neutral (Dark)/80 */
-
-  color: #282828;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--neutral-80);
 }
 
 .numerohotline {
-  
-  
-
-  /* Desktop/Heading4 */
-
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 120%;
-  /* or 34px */
-
-  /* Primary/Primary 600 */
-
-  color: #eb2e2d;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 120%;
+    color: var(--main);
 }
-
-
 
 .copycredits {
-  
-
-
-  /* Common/Body1 */
-
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 140%;
-  /* or 20px */
-
-  /* Neutral (Dark)/80 */
-
-  color: #282828;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--neutral-80);
 }
+
+.gm-control-active {
+    background-color: var(--main);
+}
+
+.label-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.color-point {
+    color: var(--main);
+}
+
+/* START breadcrumbs */
+.row-breadcrumb {
+    margin-bottom: 48px;
+
+    .q-breadcrumbs {
+        a {
+            font-size: 12px;
+            line-height: 15px;
+            color: var(--neutral-80);
+
+            &:visited {
+                color: var(--neutral-80);
+            }
+
+            &:hover {
+                color: var(--main);
+            }
+        }
+    }
+}
+/* END breadcrumbs */

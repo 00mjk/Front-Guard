@@ -1,5 +1,5 @@
 <template>
-    <div  class="box" :style="style">
+    <div class="box" :style="style">
         <p class="numero">{{ Line }}</p>
     </div>
 </template>
@@ -42,8 +42,7 @@ export default defineComponent({
     line-height: 12px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--white);
     height: 13px;
-    
 }
 </style>
