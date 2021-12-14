@@ -8,6 +8,7 @@
                 <div class="header-icons">
                     <a href="#"> <img src="../assets/cil_language.svg" /></a>
                     <a href="#"> <img src="../assets/mdi_checkbox-blank-badge-outline.svg" /> </a>
+                    <q-btn  flat round @click="$q.dark.toggle()" :icon="$q.dark.isActive ? 'nights_stay' : 'wb_sunny'"/>
                     <a class="menucabecera" href="#">
                         <svg width="24" height="40" viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1693:1640)">
