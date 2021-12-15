@@ -10,16 +10,7 @@
                     <a href="#"> <img src="../assets/mdi_checkbox-blank-badge-outline.svg" /> </a>
                     <q-btn size="16px" flat round @click="$q.dark.toggle()" :icon="$q.dark.isActive ? 'nights_stay' : 'wb_sunny'"/>
                     <a class="menucabecera" href="#">
-                        <svg  :onclick="openNav" width="24" height="40" viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1693:1640)">
-                                <path d="M18 5L18 35L17 35L17 5L18 5ZM13 5L13 35L12 35L12 5L13 5ZM8 5L8 35L7 35L7 5L8 5Z" fill="#282828" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_1693:1640">
-                                    <rect width="40" height="24" fill="white" transform="translate(24) rotate(90)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
+                        <div :onclick="openNav" class="hamburger-slim"></div>
                     </a>
                 </div>
             </q-toolbar>
@@ -123,6 +114,54 @@ export default {
 
 <style scoped lang="scss">
 
+.hamburger-slim {
+  background: transparent;
+  margin: 45px auto 40px;
+  position: relative;
+  height: 30px;
+  width: 50px;
+  scale: 0.6;
+  border-color: rgb(75, 255, 0);
+  
+
+  &:before,
+  &:after {
+    background: var(--neutral-80);
+    backface-visibility: hidden;
+    content: "";
+    height: 2px;
+    left: 0;
+    transition: 0.75s;
+    width: 50px;
+  }
+
+  &:before {
+    box-shadow: var(--neutral-80) 0 14px 0 0;
+    position: absolute;
+    top: 0;
+  }
+
+  &:after {
+    position: absolute;
+    top: calc(100% - 2px);
+  }
+
+  &:hover {
+
+    &:before {
+      box-shadow: transparent 0 0 0 0;
+      top: 50%;
+      transform: rotate(225deg);
+    }
+
+    &:after {
+      top: 50%;
+      transform: rotate(315deg);
+    }
+  }
+}
+
+
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -208,21 +247,10 @@ export default {
             max-width: 20px;
         }
 
-        path {
-            transition: all 0.4s ease-in-out;
-        }
+        
 
-        &.menucabecera {
-            margin-left: 50px;
-
-            &:hover {
-                transform: rotate(450deg);
-
-                path {
-                    fill: var(--main);
-                }
-            }
-        }
+       
+        
     }
 }
 
